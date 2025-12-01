@@ -157,8 +157,12 @@ footer {
 
 .participants-list {
   margin-top: 8px;
-  margin-left: 18px;
-  list-style-type: disc;
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .participant-badge {
@@ -172,6 +176,27 @@ footer {
   margin-right: 5px;
   letter-spacing: 0.03em;
   box-shadow: 0 1px 2px rgba(26,35,126,0.07);
+}
+
+.participant-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.delete-participant {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.delete-participant:hover {
+  background: rgba(198,40,40,0.08);
 }
 
 .no-participants {
